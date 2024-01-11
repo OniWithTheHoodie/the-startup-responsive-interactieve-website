@@ -1,75 +1,55 @@
-# Frameless gemeente Utrecht
+NL Design System zou er flink op vooruit gaan met een componenten-galerij, waar je snel kan vinden of de community al heeft gemaakt wat jij nodig hebt en hoe ver ze zijn met de Definition of Done.
 
-Contact
-Naam: Yolijn van der Kolk
+Voorbeelden:
+https://component.gallery
+https://www.designsystems.com/keeping-design-system-contributions-in-check/
 
-Email adres: yolijn@frameless.io
+Gemeente Utrecht heeft een eigen [community design system](https://nl-design-system.github.io/utrecht/storybook/?path=/docs/utrecht-design-tokens-kleuren--docs) bij NL Design System waar ze al veel componenten hebben bijgedragen. Ook hebben ze een website waar zij meer componenten documentatie op beschikbaar willen maken.
 
-Slack: @Yolijn
+Voor deze opdracht willen wij graag een componenten overzicht pagina hebben waar de status van het component bij Utrecht goed inzichtelijk is.
 
-&
+Door css-custom-properties te gebruiken kunnen jullie nu design keuzes maken voor de gemeente Utrecht en kan Frameless later ook de huisstijlen van andere klanten erop toepassen zoals bijvoorbeeld voor nldesignsystem.nl
 
-Naam: Robbert Broersma
+## Detail pagina
 
-Email adres: robbert@frameless.io
+Ook willen we graag een component-detail pagina waar met een sidebar te navigeren is tussen de verschillende documentatie onderdelen van een component. Zoals 'Gebruik', 'Design Tokens', 'Toegankelijkheid' en 'Status'.
 
-Slack: @Robbert
+Jullie kunnen hiervoor de voorbeeldpagina van de button component nabouwen https://www.figma.com/file/fy08SZpZmqx6ljLwvA3Woe/NLDS---Schetsboek?type=design&node-id=1765-1839&mode=design&t=065l0gWPpfXxPgXJ-0
+Het gaat hierbij alleen om de content pagina, dus de header, footer, sidebar, breadcrumb en 'op deze pagina' navigatie kun je weglaten.
 
-## Aanvraag 
+Moeilijke componenten, waarvan we hopen dat je er ten minste een maakt:
 
-8-1-2024							
+### Tabs voor tonen van voorbeeld per programmeertaal
 
-## Oplevering 
+Een voorbeeld is beschikbaar voor een paar talen, de naam van de npm package is per taal anders en ook het code voorbeeld. Door tabs te maken die on-click andere informatie tonen kun je dit voor de eindgebruiker makkelijk beschikbaar maken.
 
-25-01-2024
+In kleine viewports worden de tabs soms te lang, dan kan de gebruiker de taal kiezen in een selectbox.
 
+- [Voorbeeld van het component op desktop](https://www.figma.com/file/DexK5wJdvMVoxXKn1kmmUB/NLDS---Doc-website---Ontwerp?type=design&node-id=369-10383&mode=design&t=tFmI1aEp7CfHmJ7t-4)
+- [Voorbeeld van het component op mobile](https://www.figma.com/file/DexK5wJdvMVoxXKn1kmmUB/NLDS---Doc-website---Ontwerp?type=design&node-id=239-1599&mode=design&t=tFmI1aEp7CfHmJ7t-4)
 
-## Wie is de opdrachtgever ?
+### Checklist sectie voor Definition of Done
 
-De opdrachtgevers zijn Yolijn van der Kolk en Robert Broersma van het bedrijf Frameless.
+Een nieuwe sectie die ook in het tab component voorkomt
+In de nieuwe sectie wordt een spotlight getoond met de huidige status van het component en een status component als accordion waar elke status zichtbaar wordt. 
+Voor dit component kun je zelf het design bepalen of overleggen met de designer van het kernteam Jeffrey of van gemeente Utrecht René en Jeroen. Robbert en Yolijn van Frameless kunnen jullie aan elkaar voorstellen.
 
-## Wat zijn de unique selling points ?
+- [Voorbeeld van het component op desktop en mobiel](https://www.figma.com/file/fy08SZpZmqx6ljLwvA3Woe/NLDS---Schetsboek?type=design&node-id=1765-1993&mode=design&t=065l0gWPpfXxPgXJ-4)
+- [De Definition of Done per status](https://www.figma.com/file/sq4IhUI8iml49FvhZHI83e/Untitled?type=design&node-id=1-2&mode=design&t=zNq33S1j8xBMYKnx-4)
 
-Zij hebben vele white-label design systemen gemaakt die onafhankelijk zijn van een huisstijl. Developers kunnen deze hergebruiken en hun eigen huisstijl toepassen bij het maken van een website.
+### Sidebar
+Aan de zijkant staan voor de belangrijke koppen en linkje in `op deze pagina`. Door op deze te klikken scrollt de pagina naar het betreffende onderdeel.
+De sidebar blijft altijd in beeld ook als je ver naar beneden scrollt.
+Op mobiel past deze navigatie niet, dan zit hij in een `op deze pagina` uitklap menu.
 
-## Zijn er belangrijke mijlpalen ?
+- [Voorbeeld van het component op desktop](https://www.figma.com/file/DexK5wJdvMVoxXKn1kmmUB/NLDS---Doc-website---Ontwerp?type=design&node-id=369-6775&mode=design&t=tFmI1aEp7CfHmJ7t-4)
+- [Voorbeeld van het component op mobiel](https://www.figma.com/file/DexK5wJdvMVoxXKn1kmmUB/NLDS---Doc-website---Ontwerp?type=design&node-id=369-5165&mode=design&t=tFmI1aEp7CfHmJ7t-4)
 
-Zij hebben meer dan 80 componenten ontwikkeld voor Utrecht in verschillende technieken: als CSS, HTML, React, Angular, Vue en als Web Component. Deze componenten worden inmiddels ook veel gebruikt door uiteenlopende projecten in de NL Design System community.
+### Bonus: Tabs voor scroll-navigatie
 
+Voorbeeld van de scroll-tab component is te zien in Nord Design System:
+https://nordhealth.design/components/icon/#integration
 
-## Opdrachtomschrijving ?
-
-Yolijn en Robbert hebben gevraagd of er voor het NL Design System een pagina gemaakt kan worden voor de componentengalerij, waar de community componenten kan vinden die al gemaakt zijn en ook kan zien hoe ver de componenten gevorderd zijn door middel van een status met een Definition of Done. Ook willen zij graag CSS-custom-properties zien, waarbij wij designkeuzes kunnen maken voor de gemeente Utrecht, zodat Frameless later ook andere huisstijlen van verschillende klanten kan toepassen. Voor de componenten is er al een navbar en een sidebar gemaakt, en het is onze taak om de content te maken. Zij willen graag een pagina met een mini tab-navigatiebalk, waarbij we de component kunnen tonen met bijbehorende code, en informatie over gebruik, design tokens, toegankelijkheid en status kunnen presenteren.
-Tabs voor tonen van programeertalen.
-Bij het weergeven van de programmeertalen van een component willen zij dat wanneer je op een programmeertaal klikt, je de component te zien krijgt zoals deze eruitziet, samen met een stuk code dat je kunt kopiëren.
-Gebruik
-Uitleg over hoe de developers met het component moet omgaan
-Design tokens
-Omschrijving met een voorbeeldcode van het design token
-
-## Toegangkelijkheid
-Omschrijving over toegankelijkheid component
-
-## Status
-Status van de huidige component, waarbij de community kan zien in hoeverre de component gevorderd is en of er hulp nodig is voor bepaalde onderdelen van de component.
-Gebruikers ?
-De gebruikers zijn de developers.
-
-## Gebruikers van het eindresultaat ?
-Developers van de NL Design Community kunnen de status van de componenten zien en hulp aanbieden op basis van de status van de component.
-
-## Aanleiding ?
-Zij kwamen er zelf niet aan toe omdat zij het ook erg druk hebben met aan andere projecten en kwamen zij met het idee om ons in te schakelen voor dit opdracht.
-
-## Doelstelling ?
-De doelstelling is om met deze componenten bruikbaar te maken binnen de NL design community, deze componenten kunnen hergebruikt worden en daar aan kan er een eigen huisstijl aan toegevoegd worden.
-
-## Oplevering ?
-Als er goeie resultaat geleverd word en de gemaakte pagina door de checks heen komt kan dit gebruikt worden voor het NL Design systeem waar de gemeente van Utrecht wat aan kan hebben.
-
-## Welke teamleden moet je aanstellen? 
-Voor het maken dan de componenten-galerij werk ik met Tessa en Patrick en hebben wij contact met Yolijn en Robert voor de voortgang of eventuele problemen waar wij tegen aanlopen.
-
-## Relatie met andere projecten ?
-Het is onderdeel van het NL design system dat verbonden is aan het gemeente van Utrecht design system.
-
+- De tabs zijn sticky
+- Als er teveel tabs zijn om in 1x te tonen is het menu responsive zoals bij https://ux.mailchimp.com/patterns/feedback#toaster
+- Een tab selecteren zorgt voor scroll naar het geselecteerde element
