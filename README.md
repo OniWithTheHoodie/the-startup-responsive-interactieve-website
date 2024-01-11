@@ -3,7 +3,7 @@
 Contact
 Naam: Yolijn van der Kolk
 
-Email adres: yolijn.vanderkolk@ictu.nl
+Email adres: yolijn@frameless.io
 
 Slack: @Yolijn
 
@@ -11,7 +11,7 @@ Slack: @Yolijn
 
 Naam: Robbert Broersma
 
-Email adres: robbert.broersma@ictu.nl
+Email adres: robbert@frameless.io
 
 Slack: @Robbert
 
@@ -35,7 +35,7 @@ Zij hebben meer dan 80 componenten ontwikkeld voor Utrecht in verschillende tech
 
 ## Opdrachtomschrijving ?
 
-Yolijn en Robert hebben gevraagd of er voor het NL Design System een pagina gemaakt kan worden voor de componentengalerij, waar de community componenten kan vinden die al gemaakt zijn en ook kan zien hoe ver de componenten gevorderd zijn door middel van een status met een Definition of Done. Ook willen zij graag CSS-custom-properties zien, waarbij wij designkeuzes kunnen maken voor de gemeente Utrecht, zodat Frameless later ook andere huisstijlen van verschillende klanten kan toepassen. Voor de componenten is er al een navbar en een sidebar gemaakt, en het is onze taak om de content te maken. Zij willen graag een pagina met een mini tab-navigatiebalk, waarbij we de component kunnen tonen met bijbehorende code, en informatie over gebruik, design tokens, toegankelijkheid en status kunnen presenteren.
+Yolijn en Robbert hebben gevraagd of er voor het NL Design System een pagina gemaakt kan worden voor de componentengalerij, waar de community componenten kan vinden die al gemaakt zijn en ook kan zien hoe ver de componenten gevorderd zijn door middel van een status met een Definition of Done. Ook willen zij graag CSS-custom-properties zien, waarbij wij designkeuzes kunnen maken voor de gemeente Utrecht, zodat Frameless later ook andere huisstijlen van verschillende klanten kan toepassen. Voor de componenten is er al een navbar en een sidebar gemaakt, en het is onze taak om de content te maken. Zij willen graag een pagina met een mini tab-navigatiebalk, waarbij we de component kunnen tonen met bijbehorende code, en informatie over gebruik, design tokens, toegankelijkheid en status kunnen presenteren.
 Tabs voor tonen van programeertalen.
 Bij het weergeven van de programmeertalen van een component willen zij dat wanneer je op een programmeertaal klikt, je de component te zien krijgt zoals deze eruitziet, samen met een stuk code dat je kunt kopiëren.
 Gebruik
