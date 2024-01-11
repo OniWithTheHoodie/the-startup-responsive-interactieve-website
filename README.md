@@ -27,9 +27,13 @@ Slack: @Robbert
 ## Wie is de opdrachtgever ?
 
 De opdrachtgevers zijn Yolijn van der Kolk en Robert Broersma van het bedrijf Frameless.
-Wat zijn de unique selling points ?
+
+## Wat zijn de unique selling points ?
+
 Zij hebben vele white-label design systemen gemaakt die onafhankelijk zijn van een huisstijl. Developers kunnen deze hergebruiken en hun eigen huisstijl toepassen bij het maken van een website.
-Zijn er belangrijke mijlpalen ?
+
+## Zijn er belangrijke mijlpalen ?
+
 Zij hebben meer dan 80 componenten ontwikkeld voor Utrecht in verschillende technieken: als CSS, HTML, React, Angular, Vue en als Web Component. Deze componenten worden inmiddels ook veel gebruikt door uiteenlopende projecten in de NL Design System community.
 
 
