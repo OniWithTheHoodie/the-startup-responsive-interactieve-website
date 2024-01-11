@@ -1,0 +1,186 @@
+/* main styling */
+:root {
+  /* kleuren */
+  --violet: #AF91FF;
+  --gray: #98A4B6;
+  --pink: #E287B0;
+  --red: #F7464E;
+  --orange: #FF7A2A;
+  --yellow: #F9D100;
+  --green: #20BC4B;
+  --sea-green: #05B7A0;
+  --blue: #008DE4;
+  --white: #ffffff;
+  --black: #000000;
+  /* h1  */
+  --heading-1-font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Arial", sans-serif;
+  --heading-1-font-size: 1.5rem;
+  --heading-1-font-weight: 700;
+  --heading-1-line-height: 1.25;
+  /* paragraaf */
+  --paragraaf-font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Arial", sans-serif;
+  --paragraaf-font-size: 1rem;
+  --paragraaf-font-weight: 400;
+  --paragraaf-font-line-height: 1.5;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body{
+  
+
+}
+
+
+@media  screen and (min-width: 0px) and (max-width: 50em ) {
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 0.4em solid transparent;
+    border-right: 0.5em solid #555;
+    border-bottom: 0.4em solid transparent;
+    margin: 0.5em 0 0 01em;
+
+    & .triangle-text {
+      position: absolute;
+      top: -1.8em;
+      left: 1.5em;
+      font-family: var(--paragraaf-font-family);
+      font-size: var(--paragraaf-font-size);
+      font-weight: var(--paragraaf-font-weight);
+      line-height: var(--paragraaf-font-line-height);
+      color: var(--black);
+    }
+}
+
+    h1  {
+      font-family: var(--heading-1-font-family);
+      font-size: var(--heading-1-font-size);
+      font-weight: var(--heading-1-font-weight);
+      line-height: var(--heading-1-line-height);
+      margin: 2em 0 0 0.6em;
+      color: var(--black);
+    }
+  
+    .highlight {
+      font-family: var(--paragraaf-font-family);
+      font-size: var(--paragraaf-font-size);
+      font-weight: var(--paragraaf-font-weight);
+      line-height: var(--paragraaf-font-line-height);
+      color: var(--white);
+      background-color: var(--black);
+      width: 6em;
+      text-align: center;
+      margin: 2em 0 0 0.6em;
+    }
+
+    .context {
+      font-family: var(--paragraaf-font-family);
+      font-size: var(--paragraaf-font-size);
+      font-weight: var(--paragraaf-font-weight);
+      line-height: var(--paragraaf-font-line-height);
+      margin: 2em 0 0 0.6em;
+    }
+
+    p {
+      font-family: var(--paragraaf-font-family);
+      font-size: var(--paragraaf-font-size);
+      font-weight: var(--paragraaf-font-weight);
+      line-height: var(--paragraaf-font-line-height);
+      margin: 2em 0 0 0.6em;
+    }
+
+    /* pijl uitklap links */
+    .arrow {
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+    }
+
+    .down {
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      margin: 2em 0 0 0.6em;
+      cursor: pointer;
+    }
+
+    .arrow-text {
+      position: absolute;
+      top: 26.4em;
+      left: 1.3em;
+      font-family: var(--paragraaf-font-family);
+      font-size: var(--paragraaf-font-size);
+      font-weight: var(--paragraaf-font-weight);
+      line-height: var(--paragraaf-font-line-height);
+    }
+    
+    .line {
+      border-top: 0.2em solid var(--black);
+      width: 55em;
+      height: 1em;
+      rotate: 90deg;
+      position: relative;
+      top: 28em;
+      right: 27em;
+    }
+
+
+    .bar-links {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5em;
+      position: relative;
+      left: 2.5em;
+      top: 1em;
+    }
+
+    .bar-links > a {
+      color: var(--black);
+      font-family: var(--paragraaf-font-family);
+      font-size: var(--paragraaf-font-size);
+      font-weight: var(--paragraaf-font-weight);
+      line-height: var(--paragraaf-font-line-height);
+    }
+
+    .sub-link {
+      margin-left: 1em;
+    }
+
+    /* footer */
+    footer {
+      border-top: 2px solid var(--black);
+      margin-top: 9em;
+    }
+
+    .footer-content {
+      margin-top: 1.5em;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+    }
+
+    .footer-content > a {
+      color: var(--black);
+      color: var(--black);
+      font-family: var(--paragraaf-font-family);
+      font-size: var(--paragraaf-font-size);
+      font-weight: var(--paragraaf-font-weight);
+      line-height: var(--paragraaf-font-line-height);
+      margin-left: 1em;
+      text-decoration: none;
+    }
+
+    .seperate-link {
+      color: var(--black);
+    }
+}
