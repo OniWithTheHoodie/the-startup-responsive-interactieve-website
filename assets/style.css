@@ -35,7 +35,7 @@ body{
 }
 
 
-@media  screen and (min-width: 0px) and (max-width: 50em ) {
+@media  screen and (min-width: 0em) and (max-width: 50em ) {
 
   body {
     display: flex;
@@ -153,7 +153,6 @@ body{
     }
 
     .sub-link {
-      margin-left: 1em;
     }
 
     /* footer */
@@ -183,4 +182,32 @@ body{
     .seperate-link {
       color: var(--black);
     }
+}
+
+@media  screen and (min-width: 50em) and (max-width: 75em ) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .triangle-left {
+    width: 0;
+    height: 0;
+    border-top: 0.4em solid transparent;
+    border-right: 0.5em solid #555;
+    border-bottom: 0.4em solid transparent;
+    margin: 0.5em 0 0 01em;
+
+    & .triangle-text {
+      position: absolute;
+      top: -1.8em;
+      left: 1.5em;
+      font-family: var(--paragraaf-font-family);
+      font-size: var(--paragraaf-font-size);
+      font-weight: var(--paragraaf-font-weight);
+      line-height: var(--paragraaf-font-line-height);
+      color: var(--black);
+    }
+}
+
 }
