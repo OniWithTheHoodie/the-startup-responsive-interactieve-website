@@ -19,28 +19,84 @@
   --heading-1-line-height: 1.25;
   /* paragraaf */
   --paragraaf-font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Arial", sans-serif;
-  --paragraaf-font-size: 1rem;
-  --paragraaf-font-weight: 400;
+  --paragraaf-font-size: 1em;
+  --paragraaf-font-weight: 300;
   --paragraaf-font-line-height: 1.5;
 }
 
+/* import icon magnifying glass */
+@import "compass/css3";
+
+/* styling for all of the browser removing the margin and padding*/
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 
-body{
-  
-
+/* removing white space around browser */
+html, body {
+  overflow-x: hidden;
 }
 
-
-@media  screen and (min-width: 0em) and (max-width: 50em ) {
+/* mobile first */
 
   body {
     display: flex;
     flex-direction: column;
+  
   }
+
+  nav{
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+    border-bottom: 0.1em solid var(--black);
+    padding: 0em 1em 1em 0.5em;
+    margin: 0.4em 0em 0em 0em;
+
+/* Logo */
+    &  h2{
+      font-size: medium;
+      margin: 0.3em;
+    }
+
+    
+  /* menu */
+  & h3 {
+
+  }
+    
+  /* zoekbalk icon */
+
+& .ico-mglass {
+  position: relative;
+  display: inline-block;
+  background: #fff;
+  border-radius: 2em;
+  height: 1em;
+  width: 1em;
+  top: 0.4em;
+  border: 2px solid var(--black);
+  
+  &:after {
+    content: "";
+    height: 0.1em;
+    width: 0.5em;
+    background: var(--black);
+    position: absolute;
+    top: 0.9em;
+    left: 0.6em;
+    -webkit-transform: rotate(45deg);
+     -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+  }
+  
+}
+  }
+
+ 
 
   .triangle-left {
     width: 0;
@@ -48,12 +104,12 @@ body{
     border-top: 0.4em solid transparent;
     border-right: 0.5em solid #555;
     border-bottom: 0.4em solid transparent;
-    margin: 0.5em 0 0 01em;
+    margin: 0.5em 0em 0em 0.5em;
 
     & .triangle-text {
-      position: absolute;
-      top: -1.8em;
-      left: 1.5em;
+      position: relative;
+      top: -2.7em;
+      left: 0.4em;
       font-family: var(--paragraaf-font-family);
       font-size: var(--paragraaf-font-size);
       font-weight: var(--paragraaf-font-weight);
@@ -69,6 +125,7 @@ body{
       line-height: var(--heading-1-line-height);
       margin: 2em 0 0 0.6em;
       color: var(--black);
+      
     }
   
     .highlight {
@@ -89,6 +146,7 @@ body{
       font-weight: var(--paragraaf-font-weight);
       line-height: var(--paragraaf-font-line-height);
       margin: 2em 0 0 0.6em;
+      justify-content: right;
     }
 
     p {
@@ -97,6 +155,7 @@ body{
       font-weight: var(--paragraaf-font-weight);
       line-height: var(--paragraaf-font-line-height);
       margin: 2em 0 0 0.6em;
+      
     }
 
     /* pijl uitklap links */
@@ -115,8 +174,8 @@ body{
     }
 
     .arrow-text {
-      position: absolute;
-      top: 26.4em;
+      position: relative;
+      top: -3em;
       left: 1.3em;
       font-family: var(--paragraaf-font-family);
       font-size: var(--paragraaf-font-size);
@@ -130,7 +189,7 @@ body{
       height: 1em;
       rotate: 90deg;
       position: relative;
-      top: 28em;
+      top: 26em;
       right: 27em;
     }
 
@@ -153,11 +212,23 @@ body{
     }
 
     .sub-link {
+      position: relative;
+      left: 1em;
+    }
+
+    /* INTERACTION */
+    .hidden {
+      display: none;
+    }
+
+    .up {
+      transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
     }
 
     /* footer */
     footer {
-      border-top: 2px solid var(--black);
+      border-top: 0.1em solid var(--black);
       margin-top: 9em;
     }
 
@@ -182,15 +253,26 @@ body{
     .seperate-link {
       color: var(--black);
     }
-}
 
-@media  screen and (min-width: 50em) and (max-width: 75em ) {
+    .triangle-down {
+      width: 0;
+      height: 0;
+      border-left: 0.4em solid transparent;
+      border-right: 0.4em solid transparent;
+      border-top: 0.4em solid var(--gray);
+      position: relative;
+      bottom: 2em;
+      left: 7em;
+    }
+
+/* @media  screen and (min-width: 50em) {
   body {
     display: flex;
     flex-direction: column;
-  }
+    border: 1em solid var(--red);
+  } */
 
-  .triangle-left {
+  /* .triangle-left {
     width: 0;
     height: 0;
     border-top: 0.4em solid transparent;
@@ -207,7 +289,6 @@ body{
       font-weight: var(--paragraaf-font-weight);
       line-height: var(--paragraaf-font-line-height);
       color: var(--black);
-    }
-}
+    } */
 
-}
+
