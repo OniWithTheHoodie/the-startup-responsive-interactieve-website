@@ -104,7 +104,7 @@ html, body {
     border-top: 0.4em solid transparent;
     border-right: 0.5em solid #555;
     border-bottom: 0.4em solid transparent;
-    margin: 0.5em 0em 0em 0.5em;
+    margin: 1em 0em 0em 0.5em;
 
     & .triangle-text {
       position: relative;
@@ -161,9 +161,9 @@ html, body {
     /* pijl uitklap links */
     .arrow {
       border: solid black;
-      border-width: 0 3px 3px 0;
+      border-width: 0 0.20em 0.20em 0;
       display: inline-block;
-      padding: 3px;
+      padding: 0.20em;
     }
 
     .down {
@@ -201,6 +201,7 @@ html, body {
       position: relative;
       left: 2.5em;
       top: 1em;
+      transition-duration: 10s;
     }
 
     .bar-links > a {
@@ -222,8 +223,10 @@ html, body {
     }
 
     .up {
-      transform: rotate(0deg);
-      -webkit-transform: rotate(0deg);
+      transform: rotate(225deg);
+      -webkit-transform: rotate(225deg);
+      margin: 2em 0 0 0.6em;
+      
     }
 
     /* footer */
