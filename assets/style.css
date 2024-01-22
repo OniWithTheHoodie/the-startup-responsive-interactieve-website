@@ -2,7 +2,6 @@
 :root {
   /* kleuren */
   /* --violet: #AF91FF;
-  --gray: #98A4B6;
   --pink: #E287B0;
   --red: #F7464E;
   --orange: #FF7A2A;
@@ -10,6 +9,7 @@
   --green: #20BC4B;
   --sea-green: #05B7A0;
   --blue: #008DE4; */
+  --gray: #98A4B6;
   --secondary: #ffffff;
   --primary: #000000;
   /* h1  */
@@ -236,14 +236,42 @@ nav .ico-mglass:after {
     /* INTERACTION */
     .hidden,
     aside,
-    .side-line {
+    .side-line,
+    article > a,
+    .slash,
+    article > h1,
+    .tab, 
+    .black-section, 
+    .npm,
+    table,
+    article > h2,
+    .tabcontent,
+    .design-tokens,
+    .kleur,
+    .toepassen,
+    .do-and-donts,
+    .icons,
+    .formats,
+    .combinations,
+    .position,
+    nav > .fa-github,
+    .behavior,
+    .variations,
+    .diffrence-content,
+    .accessibility,
+    .copy,
+    .security,
+    .privacy,
+    .extra-info,
+    .relay {
       display: none;
     }
 
-    .side-line {
+    .side-line,
+    .tabcontent,
+    .fa-external-link {
       visibility: hidden;
     }
-
     
 
     /* footer */
@@ -327,7 +355,11 @@ nav .ico-mglass:after {
       }
 
      .fa {
-        margin: 0.5em 2em 0em 12em;
+        margin: 0.5em 2em 0em auto;
+      }
+
+      .fa-github {
+        margin-top: 1em;
       }
      
       /* LOGO */
@@ -464,7 +496,7 @@ nav .ico-mglass:after {
         background-color: var(--primary);
         width: 6em;
         text-align: center;
-        margin-top: 0.5em;
+        margin-top: 2em;
       }
 
       .context {
@@ -472,9 +504,226 @@ nav .ico-mglass:after {
         font-size: var(--paragraaf-font-size);
         font-weight: var(--paragraaf-font-weight);
         line-height: var(--paragraaf-font-line-height);
-        margin: 2em 0 0 0.6em;
+        margin-top: 2em;
         justify-content: right;
       }
+  
+      article > p {
+        font-family: var(--paragraaf-font-family);
+        font-size: var(--paragraaf-font-size);
+        font-weight: var(--paragraaf-font-weight);
+        line-height: var(--paragraaf-font-line-height);
+        margin-top: 2em;
+      }
+
+
+      /* Tab sectie */
+      .tab {
+        overflow: hidden;
+        border-bottom: 0.1em solid var(--primary);
+        margin-bottom: 1em;
+      }
+
+
+      .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 1em 1em;
+        transition: 0.3s;
+        font-size: 17px;
+      }
+
+      .tab button:hover {
+        border-bottom: 0.1em solid black;
+      }
+
+      .tab button.active {
+      border-bottom: 0.1em solid black;
+      }
+
+      .tabcontent {
+        padding: 0.2em 0em;
+        border: 0.1em solid var(--primary);
+        height: 15.7em;
+        display: none;
+      }
+
+      .tabcontent > p, h3 {
+        padding-left: 0.2em;
+      }
+
+      .black-section {
+        background-color: var(--primary);
+        position: relative;
+        top: 8em;
+        height: 5em;
+        color: var(--secondary);
+        padding: 1em;
+      }
+
+      .black-section > a {
+        padding-left: 8.5em;
+        color: var(--secondary);
+      }
+
+
+      .npm {
+        background-color: var(--gray);
+        padding: 1em;
+      }
+
+      .npm > a {
+        color: var(--primary);
+        margin-left: 27em;
+      }
+
+      .fa-external-link {
+        margin-top: 1em;
+      }
+
+      .fa-external-link > a {
+        color: var(--primary);
+        padding-left: 0.5em;
+      }
+
+      article > h2 {
+        margin-top: 1em;
+      }
+
+      /* table */
+      table {
+        margin-top: 1em;
+        width: 100%;
+      }
+
+      th, td {
+        border-bottom: 0.1em solid var(--primary);
+      }
+
+      th, td {
+       padding: 0.2em;
+      }
+
+      p > a {
+        color: var(--primary);
+      }
+
+      /* DESIGN TOKEN BUTTON */
+      button {
+        margin-top: 1em;
+        padding: 1em;
+        border-radius: 0.3em;
+      }
+
+      .code {
+        background-color: var(--primary);
+        height: 10em;
+        color: var(--secondary);
+        padding: 1em;
+      }
+
+      .toepassen > h2, h3, h4 {
+        margin-top: 1em;
+      }
+
+      .toepassen > h4 {
+        margin-bottom: 1em;
+      }
+
+      li > a {
+        color: var(--primary);
+      }
+
+      /* WEL & NIET */
+      .do-and-donts {
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+      }
+
+      .cards {
+        margin-top: 1em;
+        width: 100%;
+        height: 30em;
+        border: 0.2em solid var(--primary);
+      }
+
+      .card-text {
+        width: 100%;
+        height: 7.6em;
+        border-top: 0.2em solid var(--primary);
+        padding-left: 1em;
+      }
+
+      .fa-thumbs-o-up {
+        margin: 1em 0em 1em 0em;
+      } 
+
+      .fa-thumbs-o-down {
+        margin: 1em 0em 1em 0em;
+      }
+
+      .card-text > p {
+        margin: 0em 0em 1em 0em;
+      }
+
+      .cards > img {
+        width: 100%;
+      }
+
+      /* POSITIE */
+      .position-box {
+        border: 0.1em solid var(--primary);
+        margin-top: 1em;
+        height: 50%;
+      }
+
+      .position-img > img {
+        width: 100%;
+        height: 15em;
+      }
+
+      .position-text {
+        border-top: 0.1em solid var(--primary);
+        padding: 1em;
+      }
+
+
+      /* GEDRAG */
+      .behavior-img{
+        border: 0.1em solid var(--primary);
+        margin-top: 1em;
+      }
+
+      .behavior-img > img {
+        width: 100%;
+        height: 20em;
+      }
+
+      .behavior > ol {
+        margin: 1em 0em 0em 1em;
+      }
+
+      /* AANVULLENDE INFORMATIE */
+      .extra-info > p{
+        margin-bottom: 1em;
+      }
+
+      /* ESTAFETTE STATUS */
+      .relay > p {
+       margin-bottom: 1em;
+      }
+
+      .estafette-circle {
+        height: 1em;
+        width: 1em;
+        border-radius: 50%;
+        background-color: var(--primary);
+      } 
+
 
       footer {
         display: none;

@@ -9,6 +9,7 @@
     <title>Componenten NL Design system</title>
 </head>
 <body>
+    <!-- navbar -->
         <nav>
             <div class="circle"></div>
             <h3>menu</h3>
@@ -20,7 +21,7 @@
             <a href="">Voorbeelden</a>
             <a href="">Onderzoek</a>
             <a href="">Project</a>
-            <i style="font-size:24px" class="fa">&#xf09b;</i>
+            <i class="fa fa-github" aria-hidden="true"></i>
             <span class="ico ico-mglass"></span>
         </nav>
     <main>
@@ -63,9 +64,277 @@
             <p><strong>Gerelateerde componenten:</strong> <a href="">links als button</a>, <a href="">Destructive button</a>, <a href="">Button groep</a></p>
 
             <p><strong>Bijvoorbeeld gebruikt in:</strong> <a href="">Open Formulieren</a>, <a href="">Huwelijksplanner en Eigen Template</a></p>
+
+            <!-- TABS DESKTOP-->
+
+            <h1>Voorbeeld</h1>
+
+            <div class="tab">
+                <button class="tablinks" onclick="languages(event, 'CSS')">CSS</button>
+                <button class="tablinks" onclick="languages(event, 'HTML')">HTML</button>
+                <button class="tablinks" onclick="languages(event, 'Web Component')">Web Component</button>
+                <button class="tablinks" onclick="languages(event, 'React')">React</button>
+                <button class="tablinks" onclick="languages(event, 'Vue')">Vue</button>
+                <button class="tablinks" onclick="languages(event, 'Figma')">Figma</button>
+              </div>
+              
+              <div id="CSS" class="tabcontent">
+                <h3>CSS</h3>
+                <p>Casscading style sheets</p>
+                <p class="black-section">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, voluptatibus!<a href="">Kopieer</a></p>
+              </div>
+              
+              <div id="HTML" class="tabcontent">
+                <h3>HTML</h3>
+                <p>Hyper text mark up link</p> 
+                <p class="black-section">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, voluptatibus!<a href="">Kopieer</a>
+              </div>
+              
+              <div id="Web Component" class="tabcontent">
+                <h3>Web Component</h3>
+                <p>Dit is het webcomponent</p>
+                <p class="black-section">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, voluptatibus!<a href="">Kopieer</a>
+              </div>
+              
+              <div id="React" class="tabcontent">
+                <h3>React</h3>
+                <p>Dit is het React code</p>
+                <p class="black-section">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, voluptatibus!<a href="">Kopieer</a>
+              </div>
+              
+              <div id="Vue" class="tabcontent">
+                <h3>Vue</h3>
+                <p>Dit is het Vue cod</p>
+                <p class="black-section">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, voluptatibus!<a href="">Kopieer</a>
+              </div>
+              
+              <div id="Figma" class="tabcontent">
+                <h3>Figma</h3>
+                <p>Dit is het Figma design</p>
+                <p class="black-section">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, voluptatibus!<a href="">Kopieer</a></p>
+              </div>
+
+              <p class="npm">npm install @NLDS Button<a href="">Kopieer</a></p>
+
+              <!-- EXTERNAL LINKS -->
+              <i class="fa fa-external-link" aria-hidden="true"><a href="">Bekijk in Storybook</a></i>
+              <i class="fa fa-external-link" aria-hidden="true"><a href="">Bekijk in github</a></i>
+              <i class="fa fa-external-link" aria-hidden="true"><a href="">Changelog</a></i>
+
+              <!-- TABLE DESKTOP -->
+              <table>
+                <h2>Properties</h2>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Default</th>
+                    <th>Control</th>
+                  </tr>
+                  <tr>
+                    <td>active</td>
+                    <td>active</td>
+                    <td>-</td>  
+                    <td>False | True</td>
+                  </tr>
+                  <tr>
+                    <td>active</td>
+                    <td>active</td>
+                    <td>-</td>  
+                    <td>False | True</td>
+                  </tr>
+                  <tr>
+                    <td>active</td>
+                    <td>active</td>
+                    <td>-</td>  
+                    <td>False | True</td>
+                  </tr>
+                  <tr>
+                    <td>active</td>
+                    <td>active</td>
+                    <td>-</td>  
+                    <td>False | True</td>
+                  </tr>
+              </table>
+
+              <!-- DESIGN TOKENS -->
+              <article class="design-tokens">
+                <h2>Design tokens</h2>
+                <p>Korte beschrijving over design tokens. <a href="">Lees meer over design tokens</a></p>
+              
+
+                <button>Kopieer design tokens</button>
+                <p class="code">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aspernatur magni hic adipisci incidunt vel obcaecati, repellat unde aperiam tempora?</p>
+            </article>
+
+            <!-- TOEPASSEN -->
+            <article class="toepassen">
+              <h2>Toepassen</h2>
+              <h3>Gebruik</h3>
+              <h4>Wel gebruiken voor</h4>
+              <li>Aanduiden van belangrijke acties op een pagina.</li>
+              <li>Bevestigen of indienen van informatie die is ingevoerd in een forumlier</li>
+              <li>Een actie annuleren</li>
+              <li>Een modal of sectie openen en/of sluiten.</li>
+
+              <h4>Niet gebruiken voor</h4>
+              <li>Het navigeren naar een andere pagina. Gebruik hiervoor de <a href="">'Link als Button'</a></li>
+              <li>Destructieve acties. Gebruik hiervoor de <a href="">'Destructieve button'</a></li>
+            </article>
+
+            <!-- KLEUR -->
+            <article class="kleur">
+              <h4>Kleur</h4>
+              <p class="desktop-p">Bijvoorbeeld een stuk over de kleuren van buttons.</p>
+              <div class="do-and-donts">
+                <div class="cards">
+                    <img src="assets/imageIcon.png" alt="">
+                    <div class="card-text">
+                        <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                        <p><strong>Wel</strong></p>
+                        <p>stukjes over wat je wel moet doen</p>
+                   </div>
+                </div>
+                <div class="cards">
+                    <img src="assets/imageIcon.png" alt="">
+                    <div class="card-text">
+                        <i class="fa fa-thumbs-o-down" aria-hidden="true"></i>
+                        <p><strong>Niet</strong></p>
+                        <p>stukjes over wat je niet moet doen</p>
+                    </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- ICONEN -->
+            <article class="icons">
+                <h4>Iconen</h4>
+                <p>Bijvoorbeeld een stuk over wanneer en hoe iconen te gebruiken in button.</p>
+            </article>
+
+            <!-- FORMATEN -->
+            <article class="formats">
+                <h4>Formaten</h4>
+                <p>Bijvoorbeeld een stuk over hoe om te gaan met formaten. Wijzen op target size.</p>
+            </article>
+
+            <!-- COMBINATIES -->
+            <article class="combinations">
+                <h4>Buttons combineren</h4>
+                <p>Bijvoorbeeld een stuk over hoe je buttons kunt combineren.</p>
+            </article>
+
+            <!-- POSITIES -->
+            <article class="position">
+                <h4>Positie</h4>
+                <p>Bijvoorbeeld een stuk over hetd positioneren van button bij het formulier of binnen een modal</p>
+                <div class="position-box">
+                    <div class="position-img">
+                        <img src="assets/imageIcon.png" alt=""></div>
+                    <div class="position-text">
+                        <p>Begeleidende tekst bij afbeelding</p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- VARIATIES  -->
+            <article class="variations">
+                <h4>Variaties</h4>
+                <p><strong>Primaire acties</strong></p>
+                <p>...</p>
+
+                <p><strong>Secundaire acties</strong></p>
+                <p>...</p>
+            </article>
+
+            <!-- GEDRAG  -->
+            <article class="behavior">
+                <h4>Gedrag</h4>
+                <p><strong>Responsive</strong></p>
+                <p>stuk over het responsive gedrag.</p>
+
+                <p><strong>Focus order</strong></p>
+                <p>stuk over focus order.</p>
+
+                <div class="behavior-img">
+                    <img src="assets/imageIcon.png" alt="">
+                </div>    
+
+                <ol>
+                    <li>...</li>
+                    <li>...</li>
+                    <li>...</li>
+                    <li>...</li>
+                </ol>
+            </article>
+
+            <!-- VERSCHILLEN IN CONTENT -->
+            <article class="diffrence-content">
+                <h4>Verschillen in content</h4>
+                <p>Bijvoorbeeld veel tekst, weinig tekst, geen tekst, geen afbeeldingen, etc.</p>
+            </article>
+
+            <!-- TOEGANGKELIJKHEID -->
+            <article class="accessibility">
+                <h3>Toegankelijkheid</h3>
+                <p>Stuk over toegankelijkheid</p>
+            </article>
+
+            <!-- COPY  -->
+            <article class="copy">
+                <h3>Copy</h3>
+                <h4>Wel</h4>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+
+                <h4>Niet</h4>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+                <li>...</li>
+            </article>     
+
+            <!-- SECURITY  -->
+            <article class="security">
+                <h3>Beveiliging (security)</h3>
+                <p>Stuk over beveiliging.</p>
+            </article>
+
+            <!-- PRIVACY  -->
+            <article class="privacy">
+                <h3>Privacy (AVG)</h3>
+                <p>Stuk over privacy.</p>
+            </article>
+
+            <!-- AANVULLENDE INFORMATIE  -->
+            <article class="extra-info">
+                <h2>Aanvullende informatie</h2>
+                <h3>Onderzoek</h3>
+                <p>Heb jij onderzoek beschikbaar ? <a href="">Deel je onderzoek met het NL Design System</a></p>
+                <li><a href="">Link naar onderzoek</a></li>
+                <li><a href="">Link naar onderzoek</a></li>
+                <li><a href="">Link naar onderzoek(....)</a></li>
+            </article>
+
+            <!-- ESTAFETTE -->
+            <article class="relay">
+                <h3>Estafette status</h3>
+                <p>De status van het button Component is momenteel: Community. <a href="">Meer over het estafettemodel</a></p>
+
+                <div class="esafette">
+                    <div class="estafette-circle">Help wanted</div>
+                    <div class="estafette-circle">Community</div>
+                    <div class="estafette-circle">Candidate</div>
+                    <div class="estafette-circle">Hall of Fame</div>
+                </div>
+            </article>
         </article>
 
+
+
         <section>
+            <!-- DROPDOWN MOBILE -->
             <i id="arrow-icon" class="arrow down"></i><p class="arrow-text">Op deze pagina</p>
 
             <div class="line hidden"></div>
