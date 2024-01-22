@@ -1,7 +1,7 @@
 /* main styling */
 :root {
   /* kleuren */
-  --violet: #AF91FF;
+  /* --violet: #AF91FF;
   --gray: #98A4B6;
   --pink: #E287B0;
   --red: #F7464E;
@@ -9,7 +9,7 @@
   --yellow: #F9D100;
   --green: #20BC4B;
   --sea-green: #05B7A0;
-  --blue: #008DE4;
+  --blue: #008DE4; */
   --secondary: #ffffff;
   --primary: #000000;
   /* h1  */
@@ -465,6 +465,15 @@ nav .ico-mglass:after {
         width: 6em;
         text-align: center;
         margin-top: 0.5em;
+      }
+
+      .context {
+        font-family: var(--paragraaf-font-family);
+        font-size: var(--paragraaf-font-size);
+        font-weight: var(--paragraaf-font-weight);
+        line-height: var(--paragraaf-font-line-height);
+        margin: 2em 0 0 0.6em;
+        justify-content: right;
       }
 
       footer {
