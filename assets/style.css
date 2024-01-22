@@ -10,8 +10,8 @@
   --green: #20BC4B;
   --sea-green: #05B7A0;
   --blue: #008DE4;
-  --white: #ffffff;
-  --black: #000000;
+  --secondary: #ffffff;
+  --primary: #000000;
   /* h1  */
   --heading-1-font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Arial", sans-serif;
   --heading-1-font-size: 1.5rem;
@@ -39,37 +39,47 @@ html, body {
   overflow-x: hidden;
 }
 
-/* mobile first */
+/* mobile*/
 
-  body {
-    display: flex;
-    flex-direction: column;
-  
-  }
+body {
+  display: flex;
+  flex-direction: column;
+}
 
-  nav{
-    display: flex;
-    flex-direction: row;
-    gap: 4em;
-    border-bottom: 0.1em solid var(--black);
-    padding: 0em 1em 1em 0.5em;
-    margin: 0.4em 0em 0em 0em;
+@media screen and (max-width: 50em) {
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 0.1em solid var(--primary);
+  padding: 0em 1em 1em 0em;
+  margin: 0.4em 0em 0em -4em;
+}
+
+nav > a {
+  display: none;
+}
+
+.fa {
+  display: none;
+}
 
 /* Logo */
-    &  h2{
-      font-size: medium;
-      margin: 0.3em;
-    }
 
-    
-  /* menu */
-  & h3 {
+/* h2 styling */
+nav h2 {
+  font-size: medium;
+  margin-top: 0.3em;
+}
 
-  }
-    
-  /* zoekbalk icon */
+/* h3 styling */
+nav h3 {
+  /* Add your styles for h3 here */
+}
 
-& .ico-mglass {
+/* zoekbalk icon */
+nav .ico-mglass {
   position: relative;
   display: inline-block;
   background: #fff;
@@ -77,24 +87,22 @@ html, body {
   height: 1em;
   width: 1em;
   top: 0.4em;
-  border: 2px solid var(--black);
-  
-  &:after {
-    content: "";
-    height: 0.1em;
-    width: 0.5em;
-    background: var(--black);
-    position: absolute;
-    top: 0.9em;
-    left: 0.6em;
-    -webkit-transform: rotate(45deg);
-     -moz-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-       -o-transform: rotate(45deg);
-  }
-  
+  border: 2px solid var(--primary);
 }
-  }
+
+/* Icon after styling */
+nav .ico-mglass:after {
+  content: "";
+  height: 0.1em;
+  width: 0.5em;
+  background: var(--primary);
+  position: absolute;
+  top: 0.9em;
+  left: 0.6em;
+  transform: rotate(45deg);
+}
+
+  
 
  
 
@@ -114,7 +122,7 @@ html, body {
       font-size: var(--paragraaf-font-size);
       font-weight: var(--paragraaf-font-weight);
       line-height: var(--paragraaf-font-line-height);
-      color: var(--black);
+      color: var(--primary);
     }
 }
 
@@ -124,7 +132,7 @@ html, body {
       font-weight: var(--heading-1-font-weight);
       line-height: var(--heading-1-line-height);
       margin: 2em 0 0 0.6em;
-      color: var(--black);
+      color: var(--primary);
       
     }
   
@@ -133,8 +141,8 @@ html, body {
       font-size: var(--paragraaf-font-size);
       font-weight: var(--paragraaf-font-weight);
       line-height: var(--paragraaf-font-line-height);
-      color: var(--white);
-      background-color: var(--black);
+      color: var(--secondary);
+      background-color: var(--primary);
       width: 6em;
       text-align: center;
       margin: 2em 0 0 0.6em;
@@ -160,7 +168,7 @@ html, body {
 
     /* pijl uitklap links */
     .arrow {
-      border: solid black;
+      border: solid var(--primary);
       border-width: 0 0.20em 0.20em 0;
       display: inline-block;
       padding: 0.20em;
@@ -184,7 +192,7 @@ html, body {
     }
     
     .line {
-      border-top: 0.2em solid var(--black);
+      border-top: 0.2em solid var(--primary);
       width: 55em;
       height: 1em;
       rotate: 90deg;
@@ -205,33 +213,42 @@ html, body {
     }
 
     .bar-links > a {
-      color: var(--black);
+      color: var(--primary);
       font-family: var(--paragraaf-font-family);
       font-size: var(--paragraaf-font-size);
       font-weight: var(--paragraaf-font-weight);
       line-height: var(--paragraaf-font-line-height);
     }
 
+
     .sub-link {
       position: relative;
       left: 1em;
-    }
-
-    /* INTERACTION */
-    .hidden {
-      display: none;
     }
 
     .up {
       transform: rotate(225deg);
       -webkit-transform: rotate(225deg);
       margin: 2em 0 0 0.6em;
-      
+      cursor: pointer;
     }
+
+    /* INTERACTION */
+    .hidden,
+    aside,
+    .side-line {
+      display: none;
+    }
+
+    .side-line {
+      visibility: hidden;
+    }
+
+    
 
     /* footer */
     footer {
-      border-top: 0.1em solid var(--black);
+      border-top: 0.1em solid var(--primary);
       margin-top: 9em;
     }
 
@@ -243,8 +260,8 @@ html, body {
     }
 
     .footer-content > a {
-      color: var(--black);
-      color: var(--black);
+      color: var(--primary);
+      color: var(--primary);
       font-family: var(--paragraaf-font-family);
       font-size: var(--paragraaf-font-size);
       font-weight: var(--paragraaf-font-weight);
@@ -254,7 +271,7 @@ html, body {
     }
 
     .seperate-link {
-      color: var(--black);
+      color: var(--primary);
     }
 
     .triangle-down {
@@ -267,31 +284,192 @@ html, body {
       bottom: 2em;
       left: 7em;
     }
+  }
 
-/* @media  screen and (min-width: 50em) {
-  body {
-    display: flex;
-    flex-direction: column;
-    border: 1em solid var(--red);
-  } */
 
-  /* .triangle-left {
-    width: 0;
-    height: 0;
-    border-top: 0.4em solid transparent;
-    border-right: 0.5em solid #555;
-    border-bottom: 0.4em solid transparent;
-    margin: 0.5em 0 0 01em;
 
-    & .triangle-text {
-      position: absolute;
-      top: -1.8em;
-      left: 1.5em;
-      font-family: var(--paragraaf-font-family);
-      font-size: var(--paragraaf-font-size);
-      font-weight: var(--paragraaf-font-weight);
-      line-height: var(--paragraaf-font-line-height);
-      color: var(--black);
-    } */
 
+  /* DESKTOP */
+
+    @media screen and (min-width: 75em) {
+      /* body {
+        display: flex; 
+        flex-direction: column;
+        border: 1em solid var(--red);
+      } */
+    
+      main {
+        display: grid;
+        grid-template-columns: 0.5fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "nav nav nav"
+        "aside article section";
+      }
+
+      /* NAV */
+      nav {
+        display: flex;
+        flex-direction: row;
+        border-bottom: 0.1em solid var(--primary);
+        padding: 1em;
+        
+      }
+
+      nav > a {
+        margin: 1em -2em 0em 3em;
+        text-decoration: none;
+        color: var(--primary);
+      }
+
+      nav > a:hover {
+        border-bottom: 0.2em solid var(--primary);
+      }
+
+     .fa {
+        margin: 0.5em 2em 0em 12em;
+      }
+     
+      /* LOGO */
+      .circle {
+        border-radius: 50%;
+        background-color: var(--primary);
+        width: 3em;
+        height: 3em;
+      }
+    
+      /* h2 styling */
+      nav h2 {
+        font-size: medium;
+        margin: 1em 0em 0em 1em;
+      }
+    
+      /* h3 styling */
+      nav h3, .hidden {
+        display: none;
+      }
+    
+      /* zoekbalk icon */
+      nav .ico-mglass {
+        position: relative;
+        display: inline-block;
+        background: var(--secondary);
+        border-radius: 2em;
+        height: 1em;
+        width: 1em;
+        top: 0.8em;
+        border: 2px solid var(--primary);
+      }
+    
+      /* Icon after styling */
+      nav .ico-mglass:after {
+        content: "";
+        height: 0.1em;
+        width: 0.5em;
+        background: var(--primary);
+        position: absolute;
+        top: 1em;
+        left: 0.6em;
+        transform: rotate(45deg);
+      }
+
+      /* sidebar */
+      aside {
+        border-right: 0.1em solid var(--primary);
+      }
+
+      .side-line {
+        border-left: 0.1em solid var(--primary);
+        margin: 1em 0em 1em 1em;
+        padding-left: 0.5em;
+      }
+      
+      .side-link {
+        text-decoration: none;
+        color: var(--primary);
+        margin: 0em 0em 0em 1em;
+      }
+
+      .sidebar-triangle-down {
+        width: 0;
+        height: 0;
+        border-left: 0.4em solid transparent;
+        border-right: 0.4em solid transparent;
+        border-top: 0.4em solid var(--primary);
+        position: relative;
+        bottom: 0.5em;
+        left: 13em;
+      }
+    
+     
+
+      .arrow-left {
+        content: "\2190";
+
+      }
+
+      .arrow-right {
+        content: "\2192";
+      }
+
+      .sidebar-text {
+        position: absolute;
+        top: 6.1em;
+        left: 3em;
+      }
+
+      .sidebar-text2 {
+        position: absolute;
+        top: 6.1em;
+        left: 3em;
+      }
+
+      article {
+              margin-left: 1em;
+            }
+
+      article > a {
+        display: inline-block;
+        padding: 1em 1em 1em 0em;
+        text-decoration: underline;
+        color: var(--primary);
+        
+      }
+
+      .slash {
+          content: "\002F";
+          margin: 0em 0.5em 0em -0.5em;
+      }
+
+      h1  {
+        font-family: var(--heading-1-font-family);
+        font-size: var(--heading-1-font-size);
+        font-weight: var(--heading-1-font-weight);
+        line-height: var(--heading-1-line-height);
+        margin-top: 2em;
+        color: var(--primary);
+        
+      }
+    
+      .triangle-text {
+        display: none;
+      }
+
+      .highlight {
+        font-family: var(--paragraaf-font-family);
+        font-size: var(--paragraaf-font-size);
+        font-weight: var(--paragraaf-font-weight);
+        line-height: var(--paragraaf-font-line-height);
+        color: var(--secondary);
+        background-color: var(--primary);
+        width: 6em;
+        text-align: center;
+        margin-top: 0.5em;
+      }
+
+      footer {
+        display: none;
+      }
+      
+    }
 
