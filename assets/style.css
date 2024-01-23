@@ -234,7 +234,10 @@ nav .ico-mglass:after {
     }
 
     /* INTERACTION */
-    .hidden,
+    .hidden {
+      display: none;
+    }
+
     aside,
     .side-line,
     article > a,
@@ -263,7 +266,15 @@ nav .ico-mglass:after {
     .security,
     .privacy,
     .extra-info,
-    .relay {
+    .relay,
+    .changelog,
+    .links,
+    .insight,
+    .tip,
+    .attention,
+    hr,
+    .help,
+    .vragen {
       display: none;
     }
 
@@ -328,7 +339,7 @@ nav .ico-mglass:after {
     
       main {
         display: grid;
-        grid-template-columns: 0.5fr 1fr 1fr;
+        grid-template-columns: 0.5fr 2fr 0.5fr;
         grid-template-rows: 1fr;
         grid-template-areas:
         "nav nav nav"
@@ -558,14 +569,15 @@ nav .ico-mglass:after {
       .black-section {
         background-color: var(--primary);
         position: relative;
-        top: 8em;
+        margin-top: 6.7em;
         height: 5em;
         color: var(--secondary);
         padding: 1em;
       }
 
       .black-section > a {
-        padding-left: 8.5em;
+        padding-left: 70em;
+        
         color: var(--secondary);
       }
 
@@ -577,7 +589,7 @@ nav .ico-mglass:after {
 
       .npm > a {
         color: var(--primary);
-        margin-left: 27em;
+        padding-left: 59em;
       }
 
       .fa-external-link {
@@ -671,7 +683,8 @@ nav .ico-mglass:after {
       }
 
       .cards > img {
-        width: 100%;
+        width: 50%;
+        object-fit: cover;
       }
 
       /* POSITIE */
@@ -713,17 +726,122 @@ nav .ico-mglass:after {
       }
 
       /* ESTAFETTE STATUS */
-      .relay > p {
-       margin-bottom: 1em;
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      
+      .estafette {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        margin: 1em 0em 0em 1em;
+        z-index: 0;
+      }
+      
+      .estafette-line {
+        border-left: 0.2em solid black;
+        height: auto;
+      }
+      
+      .estafette-circle {
+        border-radius: 50%;
+        background: black;
+        width: 2em;
+        height: 2em;
+        color: white;
+        position: sticky;
+        margin-left: -1em;
+        text-align: center;
+        padding: 0.5em;
+      }
+      
+      .estafette-text {
+        position: relative;
+        margin-left: 2em;
+        margin-top: -2em;
+      }
+      
+      .estafette-line-dashed {
+        border-left: 0.2em dashed black;
+        height: 10em;
       }
 
-      .estafette-circle {
-        height: 1em;
-        width: 1em;
-        border-radius: 50%;
-        background-color: var(--primary);
-      } 
+      .fa-chevron-down {
+        margin-left: 1em;
+      }
 
+      .label {
+        margin: 1em 0em 0em 2em;
+      }
+
+      /* sidebar right  */
+
+      .arrow-text {
+        margin: 1em 0em 0em 2.5em;
+      }
+      .bar-links {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+        position: relative;
+        left: 2.5em;
+        top: 1em;
+        transition-duration: 10s;
+      }
+  
+      .bar-links > a {
+        color: var(--primary);
+        font-family: var(--paragraaf-font-family);
+        font-size: var(--paragraaf-font-size);
+        font-weight: var(--paragraaf-font-weight);
+        line-height: var(--paragraaf-font-line-height);
+      }
+  
+  
+      .sub-link {
+        position: relative;
+        left: 1em;
+      }
+
+      /* Changelog */
+      .changelog {
+        margin: 0.5em 0em 0em 2em;
+        padding-top: 1em;
+      }
+
+      /* Links */
+      .links {
+        margin: 0.5em 0em 0em 2em;
+        padding-top: 1em;
+      }
+
+      /* INZICHT */
+      .insight {
+        border: 0.1em solid var(--primary);
+        margin-top: 2em;
+        padding: 1em;
+      }
+
+      /* TIPS */
+      .tip {
+        border: 0.1em solid var(--primary);
+        margin-top: 2em;
+        padding: 1em;
+      }
+
+      /* ATTENTIE */
+      .attention {
+        border: 0.1em solid var(--primary);
+        margin-top: 2em;
+        padding: 1em;
+      }
+
+      hr {
+        margin-top: 2em;
+      }
 
       footer {
         display: none;
