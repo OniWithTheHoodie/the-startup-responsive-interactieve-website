@@ -238,6 +238,7 @@ nav .ico-mglass:after {
       display: none;
     }
 
+    /* DESKTOP ELEMENTS HIDDEN FOR MOBILE */
     aside,
     .side-line,
     article > a,
