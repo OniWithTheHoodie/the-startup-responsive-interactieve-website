@@ -1,26 +1,32 @@
 # NL Design system(Componenten galerij)
 
 ## Mobile Image
+
+### Header
 ![Header](<Schermafbeelding 2024-01-24 134232.png>)
 
+### Uitklapbare Menu
 ![Uitklapbare menu](<Schermafbeelding 2024-01-24 141844.png>)
 
+### Footer
 ![Footer](<Schermafbeelding 2024-01-24 134246.png>)
 
-### Desktop
+## Desktop
+
+### Content Navbar, 3layout(sidebar, manin content en sidebar)
 ![Alt text](<Schermafbeelding 2024-01-24 134308.png>)
 
+### Main content table en design token
 ![Alt text](<Schermafbeelding 2024-01-24 134617.png>)
 
+### Do and dont's
 ![Alt text](<Schermafbeelding 2024-01-24 134649.png>)
 
-![Alt text](<Schermafbeelding 2024-01-24 134724.png>)
-
-![Alt text](<Schermafbeelding 2024-01-24 134753.png>)
-
+### Estafette
 ![Alt text](<Schermafbeelding 2024-01-24 134844.png>)
 
-![Alt text](<Schermafbeelding 2024-01-24 134903.png>)
+### Inzicht, Tip en Let op!
+![Alt text](<Schermafbeelding 2024-01-24 142931.png>)
 
 ## Inhouds opgave
 1. Opdrachtgever
