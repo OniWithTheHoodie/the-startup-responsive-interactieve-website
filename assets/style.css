@@ -239,7 +239,7 @@ nav .ico-mglass:after {
     }
 
     /* DESKTOP ELEMENTS HIDDEN FOR MOBILE */
-    aside,
+    aside, 
     .side-line,
     article > a,
     .slash,
@@ -338,6 +338,12 @@ nav .ico-mglass:after {
         border: 1em solid var(--red);
       } */
     
+      /* Margin 0 */
+         /* TOEPASSEN */
+         main {
+          margin: 0;
+        }
+
       main {
         display: grid;
         grid-template-columns: 0.5fr 2fr 0.5fr;
@@ -620,6 +626,10 @@ nav .ico-mglass:after {
        padding: 0.2em;
       }
 
+      .design-tokens {
+        margin: 0;
+      }
+
       p > a {
         color: var(--primary);
       }
@@ -638,6 +648,11 @@ nav .ico-mglass:after {
         padding: 1em;
       }
 
+      /* TOEPASSEN */
+      .toepassen {
+        margin: 0;
+      }
+      
       .toepassen > h2, h3, h4 {
         margin-top: 1em;
       }
@@ -719,6 +734,11 @@ nav .ico-mglass:after {
 
       .behavior > ol {
         margin: 1em 0em 0em 1em;
+      }
+
+      /* VERSCHILLEN IN CONTENT */
+      .diffrence-content {
+        margin: -1;
       }
 
       /* AANVULLENDE INFORMATIE */

@@ -1,55 +1,71 @@
-NL Design System zou er flink op vooruit gaan met een componenten-galerij, waar je snel kan vinden of de community al heeft gemaakt wat jij nodig hebt en hoe ver ze zijn met de Definition of Done.
+# NL Design system(Componenten galerij)
 
-Voorbeelden:
-https://component.gallery
-https://www.designsystems.com/keeping-design-system-contributions-in-check/
+## Mobile Image
+![Alt text](<Schermafbeelding 2024-01-24 134232.png>)
+![Alt text](<Schermafbeelding 2024-01-24 134246.png>)
 
-Gemeente Utrecht heeft een eigen [community design system](https://nl-design-system.github.io/utrecht/storybook/?path=/docs/utrecht-design-tokens-kleuren--docs) bij NL Design System waar ze al veel componenten hebben bijgedragen. Ook hebben ze een website waar zij meer componenten documentatie op beschikbaar willen maken.
+### Desktop
+![Alt text](<Schermafbeelding 2024-01-24 134308.png>)
+![Alt text](<Schermafbeelding 2024-01-24 134617.png>)
+![Alt text](<Schermafbeelding 2024-01-24 134649.png>)
+![Alt text](<Schermafbeelding 2024-01-24 134724.png>)
+![Alt text](<Schermafbeelding 2024-01-24 134753.png>)
+![Alt text](<Schermafbeelding 2024-01-24 134844.png>)
+![Alt text](<Schermafbeelding 2024-01-24 134903.png>)
 
-Voor deze opdracht willen wij graag een componenten overzicht pagina hebben waar de status van het component bij Utrecht goed inzichtelijk is.
+## Inhouds opgave
+1. Opdrachtgever
+2. Onwerpprobleem en oplossing
+3. gebruik van de website
+4. kenmerken met teschnisce opzet en belangerijke onderdelen
+5. CHecklist wel gelukt/niet gelukt
 
-Door css-custom-properties te gebruiken kunnen jullie nu design keuzes maken voor de gemeente Utrecht en kan Frameless later ook de huisstijlen van andere klanten erop toepassen zoals bijvoorbeeld voor nldesignsystem.nl
+1. De opdrachtgevers
 
-## Detail pagina
+Voor het NL Design System hebben Yolijn en Robert mij en twee andere studenten gevraagd of wij een pagina willen maken. Deze pagina is een componentengalerij waarbij je ook voor de component een Definition of Done kunt zien, om te bepalen of het binnen de community is gemaakt en hoe ver de component is gevorderd, middels een estafette.
 
-Ook willen we graag een component-detail pagina waar met een sidebar te navigeren is tussen de verschillende documentatie onderdelen van een component. Zoals 'Gebruik', 'Design Tokens', 'Toegankelijkheid' en 'Status'.
+2. Ontwerpprobleem en oplossing
 
-Jullie kunnen hiervoor de voorbeeldpagina van de button component nabouwen https://www.figma.com/file/fy08SZpZmqx6ljLwvA3Woe/NLDS---Schetsboek?type=design&node-id=1765-1839&mode=design&t=065l0gWPpfXxPgXJ-0
-Het gaat hierbij alleen om de content pagina, dus de header, footer, sidebar, breadcrumb en 'op deze pagina' navigatie kun je weglaten.
+Voor het ontwerp had ik een design ontvangen dat was gemaakt via Figma, rechtstreeks vanuit het NL Design zelf. Daarnaast had ik voor mezelf ook een schets gemaakt om te kunnen zien hoe ik de lay-out zou creëren, welke HTML-elementen ik nodig had, welke CSS-properties ik zou gebruiken en hoe ik interactie zou toevoegen met JavaScript. Hiervoor zijn zowel een mobiele als desktopversie overwogen, en is nagedacht over de breakpoint, wat vervolgens is uitgewerkt in de schets.
 
-Moeilijke componenten, waarvan we hopen dat je er ten minste een maakt:
+3. Checklist sectie voor Definition of Done
 
-### Tabs voor tonen van voorbeeld per programmeertaal
+De componentenpagina is bedoeld voor de community binnen het NL Design System. De gebruikers zijn developers die de componenten kunnen hergebruiken om een website te bouwen. Met behulp van de estafette kunnen zij de Definition of Done bekijken om te zien hoever de component is gevorderd.
 
-Een voorbeeld is beschikbaar voor een paar talen, de naam van de npm package is per taal anders en ook het code voorbeeld. Door tabs te maken die on-click andere informatie tonen kun je dit voor de eindgebruiker makkelijk beschikbaar maken.
+4. kenmerken met teschnisce opzet en belangerijke onderdelen
 
-In kleine viewports worden de tabs soms te lang, dan kan de gebruiker de taal kiezen in een selectbox.
+Voor het bouwen van de site zijn er een aantal punten die ik wil benadrukken die ik heb gemaakt. Hiervoor is HTML, CSS en JavaScript gebruikt.
 
-- [Voorbeeld van het component op desktop](https://www.figma.com/file/DexK5wJdvMVoxXKn1kmmUB/NLDS---Doc-website---Ontwerp?type=design&node-id=369-10383&mode=design&t=tFmI1aEp7CfHmJ7t-4)
-- [Voorbeeld van het component op mobile](https://www.figma.com/file/DexK5wJdvMVoxXKn1kmmUB/NLDS---Doc-website---Ontwerp?type=design&node-id=239-1599&mode=design&t=tFmI1aEp7CfHmJ7t-4)
+## Mobile
+- variables voor wat kleuren en fonts. 
+- Mobile first en query gemaakt van 50em
+- flexbox gebruikt om alle mobile elementen onder elkaar te krijgen met direction column
+- html voor mobile opgezet
+- op mobile een uitklap menu gemaakt en Javascript gebruikt om de uitklap functie interactief te maken 
 
-### Checklist sectie voor Definition of Done
+## Desktop
+-Query gemaakt voor desktop van 75em 
+-voor de navbar een flexbox gebruikt in een direction row
 
-Een nieuwe sectie die ook in het tab component voorkomt
-In de nieuwe sectie wordt een spotlight getoond met de huidige status van het component en een status component als accordion waar elke status zichtbaar wordt. 
-Voor dit component kun je zelf het design bepalen of overleggen met de designer van het kernteam Jeffrey of van gemeente Utrecht René en Jeroen. Robbert en Yolijn van Frameless kunnen jullie aan elkaar voorstellen.
+## Desktop 3 grid layout
+- aside
+- main
+- section
 
-- [Voorbeeld van het component op desktop en mobiel](https://www.figma.com/file/fy08SZpZmqx6ljLwvA3Woe/NLDS---Schetsboek?type=design&node-id=1765-1993&mode=design&t=065l0gWPpfXxPgXJ-4)
-- [De Definition of Done per status](https://www.figma.com/file/sq4IhUI8iml49FvhZHI83e/Untitled?type=design&node-id=1-2&mode=design&t=zNq33S1j8xBMYKnx-4)
 
-### Sidebar
-Aan de zijkant staan voor de belangrijke koppen en linkje in `op deze pagina`. Door op deze te klikken scrollt de pagina naar het betreffende onderdeel.
-De sidebar blijft altijd in beeld ook als je ver naar beneden scrollt.
-Op mobiel past deze navigatie niet, dan zit hij in een `op deze pagina` uitklap menu.
+## belangerijke componenten 
 
-- [Voorbeeld van het component op desktop](https://www.figma.com/file/DexK5wJdvMVoxXKn1kmmUB/NLDS---Doc-website---Ontwerp?type=design&node-id=369-6775&mode=design&t=tFmI1aEp7CfHmJ7t-4)
-- [Voorbeeld van het component op mobiel](https://www.figma.com/file/DexK5wJdvMVoxXKn1kmmUB/NLDS---Doc-website---Ontwerp?type=design&node-id=369-5165&mode=design&t=tFmI1aEp7CfHmJ7t-4)
+Tabs 
+- buttons met onclick
+- divs voor inhouddelijk content 
+- js voor de interactie om verschillende content te weergeven
 
-### Bonus: Tabs voor scroll-navigatie
+Estafette
+- border-left om een lijn te maken
+- divs om circles te maken en het op de lijn te platsen
+- span icon voor de arrow
 
-Voorbeeld van de scroll-tab component is te zien in Nord Design System:
-https://nordhealth.design/components/icon/#integration
-
-- De tabs zijn sticky
-- Als er teveel tabs zijn om in 1x te tonen is het menu responsive zoals bij https://ux.mailchimp.com/patterns/feedback#toaster
-- Een tab selecteren zorgt voor scroll naar het geselecteerde element
+5. checklist wel gelukt en niet
+- interactie voor de Estafette 
+- interactie voor de linker sidebar voor desktop met de bedoeling dat het verborgen kan worden en weer kan tonen op pagina als nodig is.
+- De linker sidebar blijft altijd in beeld ook als je ver naar beneden scrollt.
