@@ -1,9 +1,11 @@
 # NL Design system(Componenten galerij)
 
 ## Mobile Image
-![Alt text](<Schermafbeelding 2024-01-24 134232.png>)
+![Header](<Schermafbeelding 2024-01-24 134232.png>)
 
-![Alt text](<Schermafbeelding 2024-01-24 134246.png>)
+![Uitklapbare menu](<Schermafbeelding 2024-01-24 141844.png>)
+
+![Footer](<Schermafbeelding 2024-01-24 134246.png>)
 
 ### Desktop
 ![Alt text](<Schermafbeelding 2024-01-24 134308.png>)
