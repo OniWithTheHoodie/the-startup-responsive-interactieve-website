@@ -61,6 +61,8 @@ Voor het bouwen van de site zijn er een aantal punten die ik wil benadrukken die
 - op mobile een uitklap menu gemaakt en Javascript gebruikt om de uitklap functie interactief te maken 
 
 ## Desktop
+
+### jBreakpoint Desktop
 -Query gemaakt voor desktop van 75em 
 -voor de navbar een flexbox gebruikt in een direction row
 
