@@ -2,15 +2,22 @@
 
 ## Mobile Image
 ![Alt text](<Schermafbeelding 2024-01-24 134232.png>)
+
 ![Alt text](<Schermafbeelding 2024-01-24 134246.png>)
 
 ### Desktop
 ![Alt text](<Schermafbeelding 2024-01-24 134308.png>)
+
 ![Alt text](<Schermafbeelding 2024-01-24 134617.png>)
+
 ![Alt text](<Schermafbeelding 2024-01-24 134649.png>)
+
 ![Alt text](<Schermafbeelding 2024-01-24 134724.png>)
+
 ![Alt text](<Schermafbeelding 2024-01-24 134753.png>)
+
 ![Alt text](<Schermafbeelding 2024-01-24 134844.png>)
+
 ![Alt text](<Schermafbeelding 2024-01-24 134903.png>)
 
 ## Inhouds opgave
@@ -69,3 +76,6 @@ Estafette
 - interactie voor de Estafette 
 - interactie voor de linker sidebar voor desktop met de bedoeling dat het verborgen kan worden en weer kan tonen op pagina als nodig is.
 - De linker sidebar blijft altijd in beeld ook als je ver naar beneden scrollt.
+
+## Link naar de webpagina
+https://oniwiththehoodie.github.io/the-startup-responsive-interactieve-website/
