@@ -33,7 +33,9 @@
 2. Onwerpprobleem en oplossing
 3. gebruik van de website
 4. kenmerken met teschnisce opzet en belangerijke onderdelen
-5. CHecklist wel gelukt/niet gelukt
+5. Checklist wel gelukt/niet gelukt
+
+*** 
 
 1. De opdrachtgevers
 
