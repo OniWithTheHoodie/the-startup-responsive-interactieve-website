@@ -12,11 +12,26 @@
   --gray: #98A4B6;
   --secondary: #ffffff;
   --primary: #000000;
-  /* h1  */
+  /* H1  */
   --heading-1-font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Arial", sans-serif;
   --heading-1-font-size: 1.5rem;
   --heading-1-font-weight: 700;
   --heading-1-line-height: 1.25;
+  /* H2 */
+  --heading-2-font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Arial", sans-serif;
+  --heading-2-font-size: 1.25rem;
+  --heading-2-font-weight: 700;
+  --heading-2-line-height: 1.25;
+   /* H3 */
+   --heading-3-font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Arial", sans-serif;
+   --heading-3-font-size: 1.25rem;
+   --heading-3-font-weight: 400;
+   --heading-3-line-height: 1.25;
+  /* H4 */
+  --heading-4-font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Arial", sans-serif;
+  --heading-4-font-size: 1.125rem;
+  --heading-4-font-weight: 400;
+  --heading-4-line-height: 1.5;
   /* paragraaf */
   --paragraaf-font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "Arial", sans-serif;
   --paragraaf-font-size: 1em;
@@ -47,6 +62,41 @@ body {
 }
 
 @media screen and (max-width: 50em) {
+
+h1 {
+  font-family: var(--heading-1-font-family);
+  font-size: var(--heading-1-font-size);
+  font-weight: var(--heading-1-font-weight);
+  line-height: var(--heading-1-line-height);
+}
+
+h2 {
+  font-family: var(--heading-2-font-family);
+  font-size: var(--heading-2-font-size);
+  font-weight: var(--heading-2-font-weight);
+  line-height: var(--heading-2-line-height);
+}
+
+h3 {
+  font-family: var(--heading-3-font-family);
+  font-size: var(--heading-3-font-size);
+  font-weight: var(--heading-3-font-weight);
+  line-height: var(--heading-3-line-height);
+}
+
+h4 {
+  font-family: var(--heading-4-font-family);
+  font-size: var(--heading-4-font-size);
+  font-weight: var(--heading-4-font-weight);
+  line-height: var(--heading-4-line-height);
+}
+
+p {
+  font-family: var(--paragraaf-font-family);
+  font-size: var(--paragraaf-font-size);
+  font-weight: var(--paragraaf-font-weight);
+  line-height: var(--paragraaf-font-line-height);
+}
 
 nav {
   display: flex;
@@ -338,6 +388,41 @@ nav .ico-mglass:after {
         border: 1em solid var(--red);
       } */
     
+      h1 {
+        font-family: var(--heading-1-font-family);
+        font-size: var(--heading-1-font-size);
+        font-weight: var(--heading-1-font-weight);
+        line-height: var(--heading-1-line-height);
+      }
+      
+      h2 {
+        font-family: var(--heading-2-font-family);
+        font-size: var(--heading-2-font-size);
+        font-weight: var(--heading-2-font-weight);
+        line-height: var(--heading-2-line-height);
+      }
+      
+      h3 {
+        font-family: var(--heading-3-font-family);
+        font-size: var(--heading-3-font-size);
+        font-weight: var(--heading-3-font-weight);
+        line-height: var(--heading-3-line-height);
+      }
+      
+      h4 {
+        font-family: var(--heading-4-font-family);
+        font-size: var(--heading-4-font-size);
+        font-weight: var(--heading-4-font-weight);
+        line-height: var(--heading-4-line-height);
+      }
+      
+      p {
+        font-family: var(--paragraaf-font-family);
+        font-size: var(--paragraaf-font-size);
+        font-weight: var(--paragraaf-font-weight);
+        line-height: var(--paragraaf-font-line-height);
+      }
+      
       /* Margin 0 */
          /* TOEPASSEN */
          main {
